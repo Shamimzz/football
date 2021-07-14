@@ -1,5 +1,4 @@
 
-
 /*---------------- Universal style-------------
 -------------------------------------------- */
 
@@ -18,7 +17,7 @@ body p{
 }
 
 :root {
-  --blue: #2D25A0;
+  --blue: #2d25a0;
   --white: #ffffff;
   --btn-color:#E02C6D;
   --Para-color:#6C6C6C;
@@ -28,46 +27,39 @@ a{
   text-decoration: none;
 }
 
-
-
 /*---------------- Home section---------------
 ---------------------------------------------*/
 
 .Home{
-  width: 1440px;
+  width: 100%;
   height: auto;
   background-color: var(--blue);
   margin: auto;
  }
-
 .Home-container{
-  width: 85%;
-   padding-left: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
-
 .Full-width-Home{
  display: grid;
  grid-template-columns: repeat(2, 1fr);
 }
-
 .right-content{
-
-margin: 123px 0px;
+  padding-top: 50px;
 }
 
 .content{
-    width: 84%;
+  width: 85%;
 }
-
 h1.title{
   color: var(--white);
   top: 205px;
-  font-size: 76px; 
-   font-weight: 800; 
-   margin: 74px 0px;
-   letter-spacing: 0.142636px;
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: 0.142636px;
 }
-
 .btn {
   padding: 15px 22px;
   background-color: var(--btn-color);
@@ -75,48 +67,59 @@ h1.title{
   font-family: Roboto;
   font-size: 19px;
   font-weight: 500;
+  transition: .4s;
+}
+.btn:hover {
+  color: #2D25A0;
+  background-color: var(--white);
 }
 
 .left-content{
-
-width: 100%;
-
-margin-top: 155px;
+  width: 86%;
+  padding-top: 50px;
+  transition: .4s;
 }
-
+.left-content:hover{
+  transform: translateX(20px);
+}
 .banner-pic{
   width: 100%;
 }
 .banner-pic img{
   width: 88%;
-}
+} 
 
 /* ------------------Playes-Blog--------------------
 --------------------------------------------------- */
-.container{
-  width: 1050px;
-  margin: auto;
+
+.Playes-Blog {
+  padding-top: 71px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-bottom: 60px;
 }
 
-.Playes-Blog{
-margin-top: 80px;
-}
 .Players{
 display: grid;
 grid-template-columns: repeat(3,1fr);
 column-gap: 30px;
 row-gap: 25px;
 }
-
 .single-player {
-  text-align: start;
-  justify-content: center;
-  width: 100%;
-  padding: 16px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 13px 40px rgb(0 0 0 / 15%);
   border-radius: 5px;
+  padding: 16px;
+  border: ridge;
+  overflow: hidden;
+}
+.single-player img {
+  transition: .5s;
+  overflow: hidden;
 }
 
+.single-player:hover img {
+  transform: scale3d(1.02, 1.02, 1.02);
+}
 .player-image{
 width: 100%;
 }
@@ -127,7 +130,6 @@ width: 100%;
   padding: 10px 13px 4px 0px;
 
 }
-
 h3.name{
 color: var(--h3-color);
 margin-top: 16px;
@@ -135,36 +137,42 @@ margin-bottom: 10px;
 }
 
 
-
-
 /* ---------------------Next World Cup--------------- 
 --------------------------------------------------------*/
 
+.Next-World-Cup {
+  padding-top: 75px;
+  padding-left: 110px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+}
 .full-width{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
-.half-width{
-
+.half-width {
+  padding-left: 6px;
+  padding-top: 40px;
+  padding-right: 4px;
 }
-
-.left-description {
-
-}
-
 .left-description p {
   margin-bottom: 56px;
   font-size: 16px;
   line-height: 20px;
 }
-
-h1.title-1 {line-height: 55px;font-weight: 800;font-size: 47px;color: var(--h3-color);width: 400px;height: 208px;letter-spacing: 0.142636px;}
-
-section.Next-World-Cup {
-  margin: 125px 0px;
+h1.title-1 {
+  line-height: 55px;
+  font-weight: 800;
+  font-size: 47px;
+  color: var(--h3-color);
+  width: 400px;
+  height: 208px;
+  letter-spacing: 0.142636px;
 }
-
+#btn-hover:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
 .right-img{
   width: 100%;
 }
@@ -172,36 +180,24 @@ section.Next-World-Cup {
   width: 100%;
 }
 
-
 /*---------------- Toall-league ----------------------*/
-
-
 .Toall-league{
-  margin: 50px 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 .League-flex{
-
-display: flex;
-
-flex-direction: row;
-
-justify-content: space-between;
-
-align-items: center;
-
-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
 .league-icon{
     width: 48%;
 }
 .league-icon img{
   width: 71%;
 } 
-
 .Signal-league {
   box-shadow: 2px 2px 14px 0px #7d7d76d6;
   padding: 20px 20px;
@@ -213,23 +209,70 @@ width: 100%;
   transform: translateY(20px);
 
 }
+#box-2{
+ background-color: #2D25A0;
+}
+#color{
+  color: var(--white);.02
+}
 
-
-.Detailes{width: 40%;}
+.Detailes{
+  width: 40%;
+}
 .digit{
-  
-font-weight: 800;
-  
-font-size: 25px;
+ font-weight: 800;   
+ font-size: 25px;
 }
 .text{
-
-font-size: 16px;
+  font-size: 16px;
 }
 
 
+/*------------- Awarad ---------------
+-----------------------------------*/
 
-/*--------------- footer-top -------------------
+.Award{
+  padding-top: 75px;
+  padding-left: 54px;
+  padding-right: 45px;
+  padding-bottom: 50px;
+}
+.Award-blog{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+.Award-card{
+  padding: 20px;
+  background-color: var(--blue);
+  margin: 10px;
+  position: relative;
+}
+
+.Award-card:before {
+  content: "";
+  width: 66px;
+  height: 65px;
+  background: var(--blue);
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 39%;
+  transform: rotate(45deg);
+}
+
+
+.Award-card img{
+  margin-bottom: 27px;
+  margin-top: 44px;
+}
+
+.Award-card h2{
+  color: var(--white);
+}
+
+/*--------------- footer-top --------------------
 -------------------------------------------------*/
 
 .logo-social-link{
@@ -237,15 +280,17 @@ display: grid;
 grid-template-columns: repeat(1,1fr);
 text-align: center;
 }
+section.footer-top {
+  padding: 59px 44px 48px 41px;
+}
 .logo-social-link img{
 width: 38%;
 margin: auto;
 }
-
 .social {
 color: var(--Para-color);
-width: 32px;
-height: 32px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 background: #dddddd;
 justify-content: center;
@@ -254,100 +299,180 @@ display: inline-flex;
 margin: 20px 0px;
 }
 
+i.social:hover {
+  background: var(--blue);
+  color: white;
+}
+
 #Copyright {
   color: var(--h3-color);
 }
 
 
+/*----------- Media Queries-------------------*/
+/*----------- Media Queries-------------------*/
 
-/*----------- Media Queries-------------------
-------------------------------------*/
+/*------------Mobile Phone--------------------*/
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:620px) {
 
- .Full-width-Home, .Players, .full-width, .Toall-league{
-    display: grid;
+  .Home-container{
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  .Full-width-Home{
     grid-template-columns: repeat(1, 1fr);
   }
-  
-  h1.title{
-  font-size: 136px;
-   }
-   .Players{
-     margin-left: 30px;
-   }
 
-.single-player{
-  padding: 50px;
+  .right-content{
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .left-content {
+    padding-top: 111px;
+    padding-left: 25px;
+    padding-right: 0px;
+  }
+
+    .banner-pic img {
+      width: 100%;
+  }
+
+  h1.title{
+    font-size: 67px;
+    margin-bottom: 30px;
+  } 
+
+.Playes-Blog {
+  padding-left: 16px;
+  padding-right: 13px;
 }
+
+.Players, .full-width{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.Next-World-Cup {
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 16px;
+  padding-bottom: 50px;
+}
+
+.Toall-league{
+  padding-top: 20px;
+  padding-right: 65px;
+  padding-left: 65px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+}
+
+section.footer-top {
+  padding: 10px 8px 8px 10px;
+}
+
 h3.name{
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 36px;
 }
 
 .player-content p{
-  font-size: 43px;
-  line-height: 46px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
-.half-width {
-  margin: auto;
-  margin-left: 122px;
-  margin-top: 162px;
+.Award-blog{
+  grid-template-columns: repeat(1, 1fr);
 }
-h1.title-1{
-  width: auto;
-  font-size: 87px;
-  line-height: 90px;
+.Award-card{
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
-
-.btn
-{
-  padding: 41px 64px;
-  font-size: 42px;
+.Award-card:before{
+  left: 38%;
+  transform: rotate(45deg);
+}
 }
 
-.Signal-league{
-  margin-top: 80px;
-}
-.left-description p {
-  margin-bottom: 115px;
-  font-size: 46px;
-  line-height: 71px;
-}
-
-.Toall-league, .Next-World-Cup{
-  display: none;
-}
+/*------------------ipad/pad-------------------*/
+/*----------------------------------------------*/
 
 
+@media only screen and (min-width:620px) and (max-width:992px) {
 
-
-
-
-
-
-
-} 
-
-
-@media only screen and (min-width:577px) and (max-width:992px) {
-
+  h1.title{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .btn{
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  .banner-pic img {
+    width: 100%;
+  }
+  .left-content {
+   width: 100%;
+  }
+  h1.title-1{
+   font-size: 30px;
+   width: 100%;
+   margin-bottom: -31px;
+  }
+  .left-description {
+  width: 106%;
+  }
+  .Playes-Blog {
+    padding: 50px 40px 40px 40px;
+  }
   .Players{
     grid-template-columns: repeat(2,1fr);
   }
-
-  .single-player{
-    margin-left: 16%;
+  .full-width{
+    grid-template-columns: repeat(2, 1fr);
   }
+  .Next-World-Cup {
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 12px;
+  }
+  .Signal-league{
+    padding: 20px 10px;
+  }
+  .Award-blog{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Award-card:before{
+    top: -6%;
+    left: 30%;
+  }
+}
 
+/*------------------ Regular Divices------------------ */
+/*-------------------------------------------------------*/
 
+@media only screen and (min-width:992px) and (max-width:1620px) {
 
-} 
-@media only screen and (min-width:1450px) {
-
-
-} 
-
-
-
+  .content{
+    font-size: 67px;
+    margin-left: 70px;
+  }
+  h1.title{
+    margin-bottom: 40px;
+    font-size: 68px;
+    margin-top: 55px;
+  }
+  .left-content{
+    width: 100%;
+  }
+  .Toall-league{
+    padding: 80px 20px 70px 40px;
+  }
+  section.League {
+    padding: 50px 20px 40px 20px;
+  }
+ .Toall-league{
+  padding: 30px 20px 20px 30px;
+ }
+}
