@@ -452,7 +452,7 @@ h3.name{
 /*------------------ Regular Divices------------------ */
 /*-------------------------------------------------------*/
 
-@media only screen and (min-width:992px) and (max-width:1620px) {
+@media only screen and (min-width:992px) and (max-width:2020px) {
 
   .content{
     font-size: 67px;
